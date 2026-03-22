@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify build${0}
+]]></content>
+    <tabTrigger>nt:cli:build</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Build locally with Netlify config</description>
+</snippet>

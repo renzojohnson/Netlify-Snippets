@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+<form name="${1:contact}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="${1:contact}" />
+  <p style="display:none">
+    <label>Don't fill this out: <input name="bot-field" /></label>
+  </p>
+  <p>
+    <label>${2:Name}: <input type="text" name="${3:name}" required /></label>
+  </p>
+  <p>
+    <label>${4:Email}: <input type="email" name="${5:email}" required /></label>
+  </p>
+  <p>
+    <label>${6:Message}: <textarea name="${7:message}" required></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+${0}
+]]></content>
+    <tabTrigger>nt:form:html</tabTrigger>
+    <scope>text.html.basic</scope>
+    <description>Netlify Form (HTML with honeypot)</description>
+</snippet>

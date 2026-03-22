@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[context.${1:staging}]
+  command = "${2:npm run build:staging}"
+
+[context.${1:staging}.environment]
+  ${3:API_URL} = "${4:https://staging-api.example.com}"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:context:branch</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Branch deploy context override</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+${0}
+]]></content>
+    <tabTrigger>nt:toml:processing</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Post-processing (CSS/JS/HTML/images)</description>
+</snippet>

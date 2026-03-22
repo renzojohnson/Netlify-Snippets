@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[[redirects]]
+  from = "${1:/}"
+  to = "${2:/es/}"
+  status = 302
+  conditions = { Country = ["${3:ES}", "${4:MX}"] }
+${0}
+]]></content>
+    <tabTrigger>nt:toml:redirect:country</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Country-based redirect</description>
+</snippet>

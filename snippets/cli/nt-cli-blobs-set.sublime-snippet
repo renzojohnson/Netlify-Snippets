@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify blobs:set ${1:store-name} ${2:key} "${3:value}"${0}
+]]></content>
+    <tabTrigger>nt:cli:blobs:set</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Set a blob value</description>
+</snippet>

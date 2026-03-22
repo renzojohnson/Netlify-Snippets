@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify sites:list${0}
+]]></content>
+    <tabTrigger>nt:cli:sites:list</tabTrigger>
+    <scope>source.shell</scope>
+    <description>List all sites</description>
+</snippet>

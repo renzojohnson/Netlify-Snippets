@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify env:import ${1:.env}${0}
+]]></content>
+    <tabTrigger>nt:cli:env:import</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Import env vars from file</description>
+</snippet>

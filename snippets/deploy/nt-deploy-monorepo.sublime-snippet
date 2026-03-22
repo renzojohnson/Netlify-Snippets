@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[build]
+  base = "${1:packages/web}"
+  command = "${2:npm run build}"
+  publish = "${3:dist}"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF HEAD -- ${1:packages/web}/"
+${0}
+]]></content>
+    <tabTrigger>nt:deploy:monorepo</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Monorepo config with ignore</description>
+</snippet>

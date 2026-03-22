@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify sites:create --name ${1:my-site}${0}
+]]></content>
+    <tabTrigger>nt:cli:sites:create</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Create new site</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+export const onBuild = ({ constants, utils }) => {
+  console.log('Publish dir:', constants.PUBLISH_DIR);
+  console.log('Functions src:', constants.FUNCTIONS_SRC);
+  ${1:// Build logic}
+};
+${0}
+]]></content>
+    <tabTrigger>nt:plugin:build</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>onBuild hook</description>
+</snippet>

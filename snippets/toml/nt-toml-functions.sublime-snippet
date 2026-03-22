@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+[functions]
+  directory = "${1:netlify/functions}"
+  node_bundler = "${2:esbuild}"
+  included_files = ["${3:**/*.json}"]
+${0}
+]]></content>
+    <tabTrigger>nt:toml:functions</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Functions configuration</description>
+</snippet>

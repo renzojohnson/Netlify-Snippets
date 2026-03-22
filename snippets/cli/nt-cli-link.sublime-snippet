@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify link${0}
+]]></content>
+    <tabTrigger>nt:cli:link</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Link directory to site</description>
+</snippet>

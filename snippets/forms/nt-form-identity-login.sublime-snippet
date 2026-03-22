@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+import netlifyIdentity from 'netlify-identity-widget';
+
+netlifyIdentity.init();
+
+const login = () => {
+  netlifyIdentity.open('login');
+  netlifyIdentity.on('login', (user) => {
+    ${1:// Handle login}
+    console.log('Logged in:', user.email);
+    netlifyIdentity.close();
+  });
+};
+${0}
+]]></content>
+    <tabTrigger>nt:form:identity:login</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Identity login</description>
+</snippet>

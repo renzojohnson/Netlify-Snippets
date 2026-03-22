@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  const data = new FormData(form);
+  data.append('form-name', '${1:contact}');
+
+  const response = await fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data as any).toString(),
+  });
+
+  if (response.ok) {
+    ${2:// Success}
+  }
+};
+${0}
+]]></content>
+    <tabTrigger>nt:form:ajax</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>AJAX form submission (include form-name)</description>
+</snippet>

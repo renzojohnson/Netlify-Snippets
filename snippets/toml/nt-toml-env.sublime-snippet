@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+[build.environment]
+  ${1:API_KEY} = "${2:your-api-key}"
+  ${3:DATABASE_URL} = "${4:postgresql://localhost/mydb}"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:env</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Build environment variables</description>
+</snippet>

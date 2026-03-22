@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify deploy --prod${0}
+]]></content>
+    <tabTrigger>nt:cli:deploy:prod</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Deploy to production</description>
+</snippet>

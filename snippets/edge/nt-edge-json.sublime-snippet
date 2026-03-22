@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  ${1:// Edge logic}
+  return Response.json({ ${2:message}: '${3:Hello from the edge}' });
+};
+
+export const config = {
+  path: '/${4:api/edge}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:json</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>JSON response from edge</description>
+</snippet>

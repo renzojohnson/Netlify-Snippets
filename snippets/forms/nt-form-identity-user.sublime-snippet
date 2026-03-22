@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+import netlifyIdentity from 'netlify-identity-widget';
+
+netlifyIdentity.init();
+
+const user = netlifyIdentity.currentUser();
+if (user) {
+  const { email, user_metadata } = user;
+  ${1:// Use user data}
+  console.log('Current user:', email);
+}
+${0}
+]]></content>
+    <tabTrigger>nt:form:identity:user</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Get current Identity user</description>
+</snippet>

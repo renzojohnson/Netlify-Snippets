@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[[redirects]]
+  from = "${1:/api/*}"
+  to = "${2:https://api.example.com/:splat}"
+  status = 200
+  force = true
+${0}
+]]></content>
+    <tabTrigger>nt:toml:redirect:proxy</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Proxy redirect (200 rewrite)</description>
+</snippet>

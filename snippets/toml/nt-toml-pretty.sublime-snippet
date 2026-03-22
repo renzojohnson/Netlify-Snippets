@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+[build]
+  command = "${1:npm run build}"
+  publish = "${2:dist}"
+
+[build.processing.html]
+  pretty_urls = true
+${0}
+]]></content>
+    <tabTrigger>nt:toml:pretty</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Build config with pretty URLs</description>
+</snippet>

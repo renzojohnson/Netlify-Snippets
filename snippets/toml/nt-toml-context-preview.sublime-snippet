@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[context.deploy-preview]
+  command = "${1:npm run build:preview}"
+
+[context.deploy-preview.environment]
+  ${2:ENABLE_DRAFT} = "true"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:context:preview</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Deploy preview context override</description>
+</snippet>

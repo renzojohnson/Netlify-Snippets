@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+export const onSuccess = ({ utils }) => {
+  ${1:// Runs after deploy succeeds}
+};
+${0}
+]]></content>
+    <tabTrigger>nt:plugin:success</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>onSuccess hook</description>
+</snippet>

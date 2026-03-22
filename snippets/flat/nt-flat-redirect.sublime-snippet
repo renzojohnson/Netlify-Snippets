@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+/${1:old-path}  /${2:new-path}  ${3:301}
+${0}
+]]></content>
+    <tabTrigger>nt:flat:redirect</tabTrigger>
+    <scope>text.plain</scope>
+    <description>_redirects — single rule</description>
+</snippet>

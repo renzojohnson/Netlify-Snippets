@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  const response = await context.next();
+  const html = await response.text();
+
+  const modified = html.replace(
+    '${1:</head>}',
+    '${2:<script>console.log("injected")</script>}</head>'
+  );
+
+  return new Response(modified, response);
+};
+
+export const config = {
+  path: '/${3:*}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:transform</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Transform response HTML</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  const ${1:session} = context.cookies.get('${1:session}');
+  ${2:// Cookie logic}
+
+  const response = await context.next();
+  context.cookies.set({
+    name: '${3:key}',
+    value: '${4:value}',
+    path: '/',
+    httpOnly: true,
+    secure: true,
+  });
+  return response;
+};
+
+export const config = {
+  path: '/${5:*}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:cookies</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Cookie read/write (context.cookies API)</description>
+</snippet>

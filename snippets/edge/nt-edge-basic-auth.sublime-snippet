@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  const auth = request.headers.get('authorization');
+
+  if (!auth) {
+    return new Response('Authentication required', {
+      status: 401,
+      headers: { 'WWW-Authenticate': 'Basic realm="${1:Restricted}"' },
+    });
+  }
+
+  const [user, pass] = atob(auth.split(' ')[1]).split(':');
+  if (user !== '${2:admin}' || pass !== Netlify.env.get('${3:BASIC_AUTH_PASSWORD}')) {
+    return new Response('Invalid credentials', { status: 403 });
+  }
+
+  return context.next();
+};
+
+export const config = {
+  path: '/${4:admin/*}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:basic:auth</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Basic auth at the edge</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify login${0}
+]]></content>
+    <tabTrigger>nt:cli:login</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Authenticate CLI</description>
+</snippet>

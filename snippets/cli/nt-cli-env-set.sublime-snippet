@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify env:set ${1:KEY} "${2:value}" --context ${3:production}${0}
+]]></content>
+    <tabTrigger>nt:cli:env:set</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Set environment variable</description>
+</snippet>

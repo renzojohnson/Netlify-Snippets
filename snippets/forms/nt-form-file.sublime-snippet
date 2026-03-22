@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+<form name="${1:upload}" method="POST" data-netlify="true" enctype="multipart/form-data">
+  <input type="hidden" name="form-name" value="${1:upload}" />
+  <p>
+    <label>${2:File}: <input type="file" name="${3:attachment}" required /></label>
+  </p>
+  <p>
+    <button type="submit">Upload</button>
+  </p>
+</form>
+${0}
+]]></content>
+    <tabTrigger>nt:form:file</tabTrigger>
+    <scope>text.html.basic</scope>
+    <description>Form with file upload</description>
+</snippet>

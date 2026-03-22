@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+[context.production.environment]
+  ${1:API_URL} = "${2:https://api.example.com}"
+  ${3:NODE_ENV} = "production"
+
+[context.deploy-preview.environment]
+  ${1:API_URL} = "${4:https://staging-api.example.com}"
+  ${3:NODE_ENV} = "development"
+${0}
+]]></content>
+    <tabTrigger>nt:deploy:env:context</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Environment per deploy context</description>
+</snippet>

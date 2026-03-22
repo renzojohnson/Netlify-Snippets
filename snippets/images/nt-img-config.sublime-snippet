@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+[images]
+  remote_images = ["${1:https://example\\.com/.*}", "${2:https://cdn\\.example\\.com/.*}"]
+${0}
+]]></content>
+    <tabTrigger>nt:img:config</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Image CDN remote patterns (netlify.toml)</description>
+</snippet>

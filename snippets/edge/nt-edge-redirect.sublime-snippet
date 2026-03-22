@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  const { country } = context.geo;
+
+  if (country?.code === '${1:DE}') {
+    return new Response(null, {
+      status: 302,
+      headers: { Location: '/${2:de}/' },
+    });
+  }
+
+  return context.next();
+};
+
+export const config = {
+  path: '/${3:*}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:redirect</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Geo-based redirect</description>
+</snippet>

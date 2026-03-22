@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+[[redirects]]
+  from = "${1:/old-path}"
+  to = "${2:/new-path}"
+  status = 301
+
+[[redirects]]
+  from = "${3:/api/*}"
+  to = "${4:/.netlify/functions/:splat}"
+  status = 200
+${0}
+]]></content>
+    <tabTrigger>nt:toml:redirects</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Multiple redirect rules</description>
+</snippet>

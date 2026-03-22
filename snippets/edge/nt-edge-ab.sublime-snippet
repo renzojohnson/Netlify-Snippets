@@ -1,0 +1,30 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  const cookie = context.cookies.get('ab-bucket');
+  const bucket = cookie || (Math.random() < ${1:0.5} ? 'a' : 'b');
+
+  const url = new URL(request.url);
+  url.pathname = `/${2:experiment}/\${bucket}\${url.pathname}`;
+
+  if (!cookie) {
+    context.cookies.set({
+      name: 'ab-bucket',
+      value: bucket,
+      path: '/',
+      maxAge: 86400,
+    });
+  }
+
+  return url;
+};
+
+export const config = {
+  path: '/${3:*}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:ab</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>A/B testing with cookie bucketing</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify env:get ${1:KEY}${0}
+]]></content>
+    <tabTrigger>nt:cli:env:get</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Get environment variable</description>
+</snippet>

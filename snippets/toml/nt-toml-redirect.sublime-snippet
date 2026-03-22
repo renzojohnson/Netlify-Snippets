@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+[[redirects]]
+  from = "${1:/old-path}"
+  to = "${2:/new-path}"
+  status = ${3:301}
+${0}
+]]></content>
+    <tabTrigger>nt:toml:redirect</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Redirect rule</description>
+</snippet>

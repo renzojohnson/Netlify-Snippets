@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify deploy --dir=${1:dist} --prod${0}
+]]></content>
+    <tabTrigger>nt:cli:deploy:dir</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Deploy specific directory</description>
+</snippet>

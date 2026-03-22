@@ -1,0 +1,31 @@
+  Netlify Snippets for Sublime Text
+  ==================================
+
+  125 curated snippets for Netlify development.
+  Built from Netlify docs (March 2026).
+
+  Quick Start:
+    1. Open any JS/TS/TOML/HTML file
+    2. Type  nt:  and browse the autocomplete menu
+    3. Press Tab to expand and jump between placeholders
+
+  Categories:
+    nt:toml:*       netlify.toml config (25)
+    nt:flat:*       _redirects & _headers (8)
+    nt:cli:*        CLI commands (20)
+    nt:fn:*         Serverless Functions (18)
+    nt:edge:*       Edge Functions (15)
+    nt:form:*       Forms & Identity (10)
+    nt:blob:*       Blobs & Storage (8)
+    nt:img:*        Image CDN (5)
+    nt:plugin:*     Build Plugins (8)
+    nt:deploy:*     Deployment & CI (8)
+
+  Note: TOML snippets require a TOML syntax package
+        (e.g., TOML from Package Control) to appear
+        in autocomplete when editing .toml files.
+
+  Documentation:
+    https://github.com/renzojohnson/Netlify
+
+  Author: Renzo Johnson — https://renzojohnson.com

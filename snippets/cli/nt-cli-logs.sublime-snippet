@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify logs:function ${1:my-function}${0}
+]]></content>
+    <tabTrigger>nt:cli:logs</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Tail function logs</description>
+</snippet>

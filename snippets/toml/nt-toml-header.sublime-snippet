@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+[[headers]]
+  for = "${1:/*}"
+  [headers.values]
+    ${2:X-Frame-Options} = "${3:DENY}"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:header</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Custom header rule</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+[build]
+  command = "${1:npm run build}"
+  publish = "${2:dist}"
+
+[build.environment]
+  NODE_VERSION = "${3:20}"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:init</tabTrigger>
+    <scope>source.toml</scope>
+    <description>netlify.toml — minimal starter</description>
+</snippet>

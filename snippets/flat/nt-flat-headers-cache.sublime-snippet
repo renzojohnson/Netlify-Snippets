@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+/assets/*
+  Cache-Control: public, max-age=${1:31536000}, immutable
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+${0}
+]]></content>
+    <tabTrigger>nt:flat:headers:cache</tabTrigger>
+    <scope>text.plain</scope>
+    <description>_headers — cache control</description>
+</snippet>

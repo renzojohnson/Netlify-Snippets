@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify open:${1:site}${0}
+]]></content>
+    <tabTrigger>nt:cli:open</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Open site or admin (open:site, open:admin)</description>
+</snippet>

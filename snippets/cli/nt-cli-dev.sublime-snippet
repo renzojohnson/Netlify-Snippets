@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify dev${0}
+]]></content>
+    <tabTrigger>nt:cli:dev</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Start local dev server</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<form name="${1:contact}" method="POST" data-netlify="true" action="${2:/success}">
+  <input type="hidden" name="form-name" value="${1:contact}" />
+  ${3:<!-- form fields -->}
+  <button type="submit">Submit</button>
+</form>
+${0}
+]]></content>
+    <tabTrigger>nt:form:success</tabTrigger>
+    <scope>text.html.basic</scope>
+    <description>Form with success redirect</description>
+</snippet>

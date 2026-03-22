@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+/  /${1:es}/  302  Country=${2:es,mx}
+${0}
+]]></content>
+    <tabTrigger>nt:flat:redirect:country</tabTrigger>
+    <scope>text.plain</scope>
+    <description>_redirects — country-based</description>
+</snippet>

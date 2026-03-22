@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+export default async () => {
+  ${1:// Scheduled task logic}
+  console.log('Scheduled function ran at', new Date().toISOString());
+};
+
+export const config = {
+  schedule: '${2:@daily}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:fn:scheduled</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Scheduled function (cron)</description>
+</snippet>

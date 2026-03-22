@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=${1:31536000}, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:headers:cache</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Cache-Control headers (assets + HTML)</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request, context: any) => {
+  const ip = context.ip;
+  ${1:// IP logic}
+  return Response.json({ ip });
+};
+
+export const config = {
+  path: '/${2:api/ip}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:edge:ip</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Client IP from context</description>
+</snippet>

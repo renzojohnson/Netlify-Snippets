@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+<img
+  src="/.netlify/images?url=${1:/images/photo.jpg}&w=800&fm=webp&q=80"
+  srcset="
+    /.netlify/images?url=${1:/images/photo.jpg}&w=400&fm=webp&q=80 400w,
+    /.netlify/images?url=${1:/images/photo.jpg}&w=800&fm=webp&q=80 800w,
+    /.netlify/images?url=${1:/images/photo.jpg}&w=1200&fm=webp&q=80 1200w
+  "
+  sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
+  alt="${2:Description}"
+  loading="lazy"
+/>
+${0}
+]]></content>
+    <tabTrigger>nt:img:responsive</tabTrigger>
+    <scope>text.html.basic</scope>
+    <description>Responsive Image CDN (srcset)</description>
+</snippet>

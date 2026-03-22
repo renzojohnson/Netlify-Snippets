@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+// Background function — file MUST be named *-background.mts
+// Invoked via POST, returns 202 immediately, runs up to 15 min
+export default async (request: Request) => {
+  const body = await request.json();
+  ${1:// Long-running background work}
+  console.log('Background task completed');
+};
+
+export const config = {
+  path: '/${2:api/background-task}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:fn:background</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Background function (name file *-background.mts)</description>
+</snippet>

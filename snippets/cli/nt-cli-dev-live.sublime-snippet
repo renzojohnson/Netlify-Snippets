@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify dev --live${0}
+]]></content>
+    <tabTrigger>nt:cli:dev:live</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Live share dev server</description>
+</snippet>

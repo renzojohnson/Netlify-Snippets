@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+[build]
+  command = "${1:npm run build}"
+  publish = "${2:dist}"
+  functions = "${3:netlify/functions}"
+  edge_functions = "${4:netlify/edge-functions}"
+
+[build.environment]
+  NODE_VERSION = "${5:20}"
+
+[[redirects]]
+  from = "${6:/api/*}"
+  to = "${7:/.netlify/functions/:splat}"
+  status = ${8:200}
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+
+[functions]
+  node_bundler = "esbuild"
+
+[dev]
+  command = "${9:npm run dev}"
+  port = ${10:8888}
+  targetPort = ${11:3000}
+${0}
+]]></content>
+    <tabTrigger>nt:toml:full</tabTrigger>
+    <scope>source.toml</scope>
+    <description>netlify.toml — full config scaffold</description>
+</snippet>

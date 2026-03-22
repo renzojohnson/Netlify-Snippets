@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+/${1:*}
+  ${2:X-Frame-Options}: ${3:DENY}
+  ${4:X-Content-Type-Options}: ${5:nosniff}
+${0}
+]]></content>
+    <tabTrigger>nt:flat:header</tabTrigger>
+    <scope>text.plain</scope>
+    <description>_headers — custom header rule</description>
+</snippet>

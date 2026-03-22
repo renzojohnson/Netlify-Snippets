@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+[[redirects]]
+  from = "${1:/admin/*}"
+  to = "${2:/login}"
+  status = 302
+  conditions = { Role = ["${3:admin}"] }
+  force = true
+${0}
+]]></content>
+    <tabTrigger>nt:toml:redirect:role</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Role-based redirect (Identity)</description>
+</snippet>

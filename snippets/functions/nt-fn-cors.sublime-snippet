@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request) => {
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '${1:*}',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+        'Access-Control-Max-Age': '86400',
+      },
+    });
+  }
+
+  ${2:// Handler logic}
+  return new Response(JSON.stringify({ ok: true }), {
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '${1:*}',
+    },
+  });
+};
+
+export const config = {
+  path: '/${3:api/cors}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:fn:cors</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>CORS-enabled function</description>
+</snippet>

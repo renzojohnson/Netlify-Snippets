@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify functions:create --name ${1:my-function}${0}
+]]></content>
+    <tabTrigger>nt:cli:functions:create</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Scaffold a new function</description>
+</snippet>

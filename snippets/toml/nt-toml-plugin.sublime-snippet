@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[[plugins]]
+  package = "${1:@netlify/plugin-lighthouse}"
+
+  [plugins.inputs]
+    ${2:audits} = ${3:["performance", "accessibility"]}
+${0}
+]]></content>
+    <tabTrigger>nt:toml:plugin</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Build plugin</description>
+</snippet>

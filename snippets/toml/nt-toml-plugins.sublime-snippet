@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[[plugins]]
+  package = "${1:@netlify/plugin-lighthouse}"
+
+[[plugins]]
+  package = "${2:netlify-plugin-sitemap}"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:plugins</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Multiple build plugins</description>
+</snippet>

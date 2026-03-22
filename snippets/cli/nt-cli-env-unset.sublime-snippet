@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netlify env:unset ${1:KEY}${0}
+]]></content>
+    <tabTrigger>nt:cli:env:unset</tabTrigger>
+    <scope>source.shell</scope>
+    <description>Remove environment variable</description>
+</snippet>

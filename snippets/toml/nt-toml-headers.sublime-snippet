@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "${1:*}"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
+${0}
+]]></content>
+    <tabTrigger>nt:toml:headers</tabTrigger>
+    <scope>source.toml</scope>
+    <description>Security + CORS headers</description>
+</snippet>

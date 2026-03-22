@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+export default async (request: Request) => {
+  const { method } = request;
+
+  switch (method) {
+    case 'GET':
+      return Response.json({ items: [] });
+    case 'POST': {
+      const body = await request.json();
+      return Response.json({ created: body }, { status: 201 });
+    }
+    case 'PUT': {
+      const body = await request.json();
+      return Response.json({ updated: body });
+    }
+    case 'DELETE':
+      return new Response(null, { status: 204 });
+    default:
+      return new Response('Method Not Allowed', { status: 405 });
+  }
+};
+
+export const config = {
+  path: '/${1:api/resource}',
+};
+${0}
+]]></content>
+    <tabTrigger>nt:fn:crud</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>Multi-method handler (GET/POST/PUT/DELETE)</description>
+</snippet>

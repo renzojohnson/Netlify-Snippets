@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+npx netlify-cli deploy --dir=${1:dist} --prod --auth=\$NETLIFY_AUTH_TOKEN --site=\$NETLIFY_SITE_ID${0}
+]]></content>
+    <tabTrigger>nt:deploy:cli</tabTrigger>
+    <scope>source.yaml, source.shell</scope>
+    <description>Deploy via CLI (CI/CD)</description>
+</snippet>

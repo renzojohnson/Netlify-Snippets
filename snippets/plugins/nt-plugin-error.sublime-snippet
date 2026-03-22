@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+export const onError = ({ utils, error }) => {
+  console.error('Build failed:', error.message);
+  ${1:// Error handling}
+};
+${0}
+]]></content>
+    <tabTrigger>nt:plugin:error</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+    <description>onError hook</description>
+</snippet>
