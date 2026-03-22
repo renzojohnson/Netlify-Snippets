@@ -252,3 +252,4 @@ Without a TOML syntax package, Sublime Text opens `.toml` files as Plain Text an
 ## License
 
 MIT License. Copyright (c) 2026 [Renzo Johnson](https://renzojohnson.com).
+
