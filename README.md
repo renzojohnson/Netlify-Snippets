@@ -1,8 +1,8 @@
 # Netlify Snippets for Sublime Text
 
-[![Package Control](https://img.shields.io/packagecontrol/dt/Netlify.svg?style=flat-square)](https://packagecontrol.io/packages/Netlify)
+[![Package Control](https://img.shields.io/packagecontrol/dt/Netlify%20Snippets.svg?style=flat-square)](https://packagecontrol.io/packages/Netlify%20Snippets)
 [![Sublime Text](https://img.shields.io/badge/Sublime%20Text-3%2F4-ff9800.svg?style=flat-square&logo=sublimetext&logoColor=white)](https://www.sublimetext.com/)
-[![License](https://img.shields.io/github/license/renzojohnson/Netlify.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/renzojohnson/Netlify-Snippets.svg?style=flat-square)](LICENSE)
 
 125 curated snippets for Netlify development — netlify.toml, CLI, Functions, Edge Functions, Forms, Blobs, Image CDN, Build Plugins, and Deployment.
 
@@ -16,7 +16,7 @@
 
 1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 2. Type **Install Package**
-3. Search for **Netlify**
+3. Search for **Netlify Snippets**
 
 ### Manual
 
@@ -25,15 +25,15 @@ Clone into your Sublime Text `Packages` directory:
 ```bash
 # macOS
 cd ~/Library/Application\ Support/Sublime\ Text/Packages
-git clone https://github.com/renzojohnson/Netlify.git
+git clone https://github.com/renzojohnson/Netlify-Snippets.git
 
 # Linux
 cd ~/.config/sublime-text/Packages
-git clone https://github.com/renzojohnson/Netlify.git
+git clone https://github.com/renzojohnson/Netlify-Snippets.git
 
 # Windows
 cd %APPDATA%\Sublime Text\Packages
-git clone https://github.com/renzojohnson/Netlify.git
+git clone https://github.com/renzojohnson/Netlify-Snippets.git
 ```
 
 ## Usage
@@ -240,13 +240,13 @@ Without a TOML syntax package, Sublime Text opens `.toml` files as Plain Text an
 
 ## Related Packages
 
-- [Vercel](https://packagecontrol.io/packages/Vercel) — 140 snippets for Vercel development
+- [Vercel Snippets](https://packagecontrol.io/packages/Vercel%20Snippets) — 140 snippets for Vercel development
 
 ## Links
 
-- [Package Control](https://packagecontrol.io/packages/Netlify)
-- [GitHub](https://github.com/renzojohnson/Netlify)
-- [Issues](https://github.com/renzojohnson/Netlify/issues)
+- [Package Control](https://packagecontrol.io/packages/Netlify%20Snippets)
+- [GitHub](https://github.com/renzojohnson/Netlify-Snippets)
+- [Issues](https://github.com/renzojohnson/Netlify-Snippets/issues)
 - [Author](https://renzojohnson.com)
 
 ## License

@@ -26,6 +26,6 @@
         in autocomplete when editing .toml files.
 
   Documentation:
-    https://github.com/renzojohnson/Netlify
+    https://github.com/renzojohnson/Netlify-Snippets
 
   Author: Renzo Johnson — https://renzojohnson.com
